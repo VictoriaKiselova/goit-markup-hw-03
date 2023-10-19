@@ -12,9 +12,58 @@ body {
 button {
   cursor: pointer;
 }
+
+.email-link:hover,
+.email-link:focus {
+  color: #404bbf;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1128px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*header*/
+
 .page-header {
   background: var(--WHITE, #fff);
+}
+.page-navigation {
+  display: flex;
+  text-align: center;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.contact-list {
+  gap: 40px;
+  display: flex;
 }
 .logo {
   color: #4d5ae5;
@@ -24,9 +73,16 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .span-logo {
   color: #2e2f42;
+}
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -35,6 +91,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
@@ -49,24 +106,28 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-.email-link:hover,
-.email-link:focus {
-  color: #404bbf;
+  display: inline-block;
+  padding-top: 24px;
+  padding-left: 24px;
 }
 
 /*HERO============================*/
 
 .hero {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-bottom: 188px;
 }
-.page-hero {
+.title-hero {
   color: var(--WHITE, #ffffff);
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-top: 198px;
+  width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order-button {
   background: var(--IRIS, #4d5ae5);
@@ -75,18 +136,31 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .order-button:hover,
 .order-button:focus {
   background: #404bbf;
 }
-/*EFFECTIVE SOLUTIONS===============================*/
+
+/*EFFECTIVE SOLUTIONS ===============================*/
 
 .effective-solutions {
   background: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.text-about {
+  display: flex;
+  gap: 24px;
 }
 .tittle-strategy {
-  color: #ffffff;
+  display: none;
 }
 .solutions-list {
   background-color: #ffffff;
@@ -97,6 +171,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .text-section {
   font-size: 16px;
@@ -105,10 +180,16 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.test-solutions {
+  width: 264px;
+}
+
 /*OUR TEAM======================================*/
 
 .page-team {
   background: var(--CLOUD, #f4f4fd);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .tittle-team {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -118,22 +199,62 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-team-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
+}
+.img-team {
+  margin-bottom: 32px;
+}
+.name-team {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.major-team {
+  text-align: center;
 }
 
-/*PAGE PORTFOLIO=================================*/
+/*PAGE PORTFOLIO =================================*/
 
 .page-portfolio {
   background: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.list-portfolio {
+  display: block;
+  padding-top: 72px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.image-portfolio {
+  flex-basis: auto;
+  width: calc(1128-5) / 6;
+}
+.marketing {
+  width: 296px;
+  color: #f4f4fd;
+  position: absolute;
+}
+.title-portfolio {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 /*PAGE FOOTER=======================================*/
 .page-footer {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 102px;
+  padding-bottom: 100px;
 }
 .logo-footer {
+  display: block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -141,10 +262,12 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 17.5px;
 }
 .web-logo {
   color: #f4f4fd;
 }
 .text-section-footer {
   color: #f4f4fd;
+  width: 264px;
 }
