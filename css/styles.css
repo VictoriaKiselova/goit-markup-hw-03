@@ -82,8 +82,7 @@ img {
   color: #2e2f42;
 }
 .menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 .menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
