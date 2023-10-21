@@ -62,6 +62,9 @@ img {
   display: flex;
   gap: 40px;
 }
+.menu-item {
+  padding: 24px 0 24px;
+}
 .contact-list {
   gap: 40px;
   display: flex;
@@ -81,9 +84,7 @@ img {
 .span-logo {
   color: #2e2f42;
 }
-.menu-item {
-  padding: 24px 0;
-}
+
 .menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 16px;
