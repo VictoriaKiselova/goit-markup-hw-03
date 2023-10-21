@@ -38,10 +38,8 @@ img {
 }
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*header*/
@@ -63,15 +61,12 @@ img {
   display: flex;
   gap: 40px;
 }
-.list-header {
-  padding: 24px 0 24px;
-}
 .menu-item {
   padding: 24px 0 24px;
 }
 .contact-list {
-  gap: 40px;
   display: flex;
+  gap: 40px;
 }
 .logo {
   color: #4d5ae5;
@@ -95,6 +90,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0 24px;
 }
 
 .menu-link:hover,
