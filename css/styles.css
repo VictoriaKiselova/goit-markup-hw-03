@@ -62,7 +62,9 @@ img {
 .menu {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+}
+.list-header {
+  padding: 24px 0 24px;
 }
 .menu-item {
   padding: 24px 0 24px;
