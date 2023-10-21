@@ -37,9 +37,9 @@ img {
   display: block;
 }
 .container {
-  max-width: 1128px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,10 +48,11 @@ img {
 
 .page-header {
   background: var(--WHITE, #fff);
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-navigation {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 .nav-container {
   display: flex;
@@ -116,6 +117,7 @@ img {
 .hero {
   background: var(--NAVY-BLUE, #2e2f42);
   padding-bottom: 188px;
+  padding-top: 188px;
 }
 .title-hero {
   color: var(--WHITE, #ffffff);
@@ -123,8 +125,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding-top: 198px;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -142,6 +143,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .order-button:hover,
 .order-button:focus {
@@ -159,11 +163,16 @@ img {
   display: flex;
   gap: 24px;
 }
-.tittle-strategy {
-  display: none;
+.title-solutions {
+  margin-bottom: 8px;
+}
+.visually-hidden {
+  width: 0;
+  height: 0;
 }
 .solutions-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 .tittle-section {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -206,6 +215,13 @@ img {
   display: flex;
   gap: 24px;
 }
+.team-container {
+  padding: 32px 0;
+}
+.team-list {
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
 .img-team {
   margin-bottom: 32px;
 }
@@ -232,10 +248,16 @@ img {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 24px;
+  row-gap: 48px;
 }
 .image-portfolio {
   flex-basis: auto;
-  width: calc(1128-5) / 6;
+  width: calc((100%-48px) / 3);
+}
+.app-description {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .marketing {
   width: 296px;
@@ -250,11 +272,11 @@ img {
 /*PAGE FOOTER=======================================*/
 .page-footer {
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 102px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -262,7 +284,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .web-logo {
   color: #f4f4fd;
