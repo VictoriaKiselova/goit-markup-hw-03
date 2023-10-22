@@ -55,7 +55,6 @@ img {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0 24px;
 }
 .menu {
   display: flex;
@@ -79,6 +78,7 @@ img {
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 .span-logo {
   color: #2e2f42;
