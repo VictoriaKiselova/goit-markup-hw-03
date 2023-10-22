@@ -61,7 +61,6 @@ img {
   gap: 40px;
 }
 .menu-item {
-  padding: 24px 0 24px;
 }
 .contact-list {
   display: flex;
@@ -78,7 +77,6 @@ img {
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-  display: block;
 }
 .span-logo {
   color: #2e2f42;
@@ -90,6 +88,9 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
